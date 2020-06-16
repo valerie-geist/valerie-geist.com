@@ -1,3 +1,24 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# Path home
+home:
+  path: /
+  controller: App\Controller\HomeController::index
+
+# Path projets web
+projets_web:
+  path: /projets-developpement-Web
+  controller: App\Controller\ProjetController::projetsWebAction
+
+# Path projet sport
+projet_port:
+  path: /projets-developpement-web/projet-sport
+  controller: App\Controller\ProjetController::projetSportAction
+
+# Path projet voiture
+projetVoiture:
+  path: /projets-developpement-web/projet-voiture
+  controller: App\Controller\ProjetController::projetVoitureAction
+
+# Path projet blog
+projetBlog:
+  path: /projets-developpement-web/projet-blog
+  controller: App\Controller\ProjetController::projetBlogAction

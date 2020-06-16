@@ -1,0 +1,166 @@
+{% extends './base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('stylesheets/home-style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<!-- Titre de la page -->
+<div class="container case case-verte mt-4 p-4">
+    <h1>Développeuse Web et Web mobile junior</h1>
+</div>
+
+<!-- Présentation -->
+<div class="container case case-noire mt-4 pt-4 pb-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-10 col-lg-10">
+            <!-- Titre de la présentation -->
+            <h3 class="presentation">Qui suis-je ?</h3>
+            <!-- Trait de séparation -->
+            <div class="separation"></div>
+            <!-- Début de la présentation -->
+            <div class="mt-5 indent">
+                Je m’appelle Valérie GEIST, j’ai 27 ans et je suis actuellement en recherche d'emploi suite à une
+                formation pour laquelle je prépare un titre
+                professionnel de Dévelopeuse Web et Web Mobile.
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-8 mt-4">
+                    <div class="indent">
+                        J'ai commencé ma vie universitaire par l'obtention d'une licence en Arts Appliqués - Design option Communication, où j'ai appris les bases du métier de
+                        graphiste grâce à l'apprentissage des différents logiciels de création graphique. J'ai aussi pu y développer
+                        une sensibilité esthétique utile pour ma future vie professionnelle et ma vie personnelle.
+                    </div>
+                    <div class="mt-4 indent">
+                        J'ai par la suite effectué une formation de développeur web et web mobile, où j'ai pu me former aux différents langages du développement web, du
+                        front-end au back-end. J'ai appris à créer des projets, individuels et en groupe, pour répondre à des problématiques spécifiques lors des différentes évaluations données.
+                    </div>
+                </div>
+                <!-- Logo -->
+                <div class="col-sm-4 col-md-4 col-lg-4 align-self-center">
+                    <img src="{{ asset('medias/images/logo-valerie-geist.svg') }}" class="logo pl-2">
+                </div>
+            </div>
+            <div class="mt-4 indent">
+                Durant mon stage de fin de formation, j'ai déjà pu combiner mes connaissances dans l'infographie et le
+                développement web en réalisant une maquette et des visuels pour un prototype de site internet que j'ai par la suite utilisés pour coder le projet.
+                Je serais donc capable d'utiliser toutes ces compétences pour la création de mes futurs projets en
+                développement web et de créer des sites esthétiques mais aussi fonctionnels.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Titre compétences -->
+<div class="container case case-verte mt-4 p-2">
+    <h2 class="pt-1">Mes compétences</h2>
+</div>
+
+<!-- Compétences web et graphisme -->
+<div class="container mt-2 p-4">
+    <div class="row ">
+        <!-- Compétences web -->
+        <div class="col-sm col-md col-lg case case-noire espace p-3">
+            <!-- Titre de la case web -->
+            <h3 class="mb-3">Web</h3>
+            <ul>
+                <!-- HTML et JS affichage écran sm et lg -->
+                <div class="row affichage-li-sm-lg">
+                    <!-- Ligne HTML -->
+                    <li class="col-sm-4 col-md-4 col-lg-4 mb-1">
+                        <img src="{{ asset('medias/images/logo-html.svg') }}" width="20px" class="mr-3">
+                        HTML
+                    </li>
+                    <!-- Ligne  JS -->
+                    <li class="col-sm-6 col-md-6 col-lg-6 mb-1">
+                        <img src="{{ asset('medias/images/logo-js.svg') }}" width="20px" class="mr-3">
+                        JavaScript / JQuery
+                    </li>
+                </div>
+                <!-- HTML et JS affichage écran md -->
+                <div class="row affichage-li-md">
+                    <!-- Ligne HTML -->
+                    <li class="col-sm-4 col-md-4 col-lg-4 mb-1">
+                        <img src="{{ asset('medias/images/logo-html.svg') }}" width="20px" class="mr-3">
+                        HTML
+                    </li>
+                    <!-- Ligne JS -->
+                    <li class="col-sm-6 col-md-6 col-lg-6 mb-1 test-2">
+                        <img src="{{ asset('medias/images/logo-js.svg') }}" width="20px" class="mr-3">
+                        JScript / JQuery
+                    </li>
+                </div>
+                <!-- CSS et Php / Symfony -->
+                <div class="row">
+                    <!-- Ligne CSS -->
+                    <li class="col-sm-4 col-md-4 col-lg-4 mb-1">
+                        <img src="{{ asset('medias/images/logo-css.svg') }}" width="20px" class="mr-3">
+                        CSS
+                    </li>
+                    <!-- Ligne Php / Symfony -->
+                    <li class="col-sm-6 col-md-6 col-lg-6 mb-1">
+                        <img src="{{ asset('medias/images/logo-php.svg') }}" width="20px" class="mr-3">
+                        Php / Symfony
+                    </li>
+                </div>
+                <!-- Bootstrap et MySQL -->
+                <div class="row">
+                    <!-- Ligne Bootstrap -->
+                    <li class="col-sm-4 col-md-4 col-lg-4 mb-1">
+                        <img src="{{ asset('medias/images/logo-bootstrap.svg') }}" width="20px" class="mr-3">
+                        Bootstrap
+                    </li>
+                    <!-- Ligne MySQL -->
+                    <li class="col-sm-6 col-md-6 col-lg-6">
+                        <img src="{{ asset('medias/images/logo-sql.svg') }}" width="20px" class="mr-3">
+                        MySql
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- Compétences graphisme -->
+        <div class="col-sm col-md col-lg case case-noire m-left p-3">
+            <h3 class="mb-3">Infographie</h3>
+            <ul>
+                <li class="mb-1">
+                    <img src="{{ asset('medias/images/logo-photoshop.svg') }}" width="20px" class="mr-3">
+                    Photoshop
+                </li>
+                <li class="mb-1"><img src="{{ asset('medias/images/logo-illustrator.svg') }}" width="20px" class="mr-3">
+                    Illustrator
+                </li>
+                <li>
+                    <img src="{{ asset('medias/images/logo-indesign.svg') }}" width="20px" class="mr-3">
+                    InDesign
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Titre projets -->
+<div class="container case case-verte p-2">
+    <h2 class="pt-1">Mes projets</h2>
+</div>
+
+<div class="container mt-2 p-4">
+    <div class="row">
+        <!-- Image et lien projets web -->
+        <div class="col-sm col-md col-lg p-4 case case-noire espace projet">
+            <h4 class="mb-3">Voir mes projets de développement web :</h4>
+            <a href="{{path('projets_web')}}" class="projet">
+                <img src="{{ asset('medias/images/image_code.jpg') }}" width="100%">
+            </a>
+        </div>
+        <!-- Image et lien projets graphisme -->
+        <div class="col-sm col-md col-lg p-4 case case-noire projet">
+            <h4 class="mb-3">Voir mes projets de création graphique :</h4>
+            <a href="https://www.behance.net/valeriegeist" target="blank" class="projet">
+                <img src="{{ asset('medias/images/mockup_cordissimo.jpg') }}" width="100%">
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

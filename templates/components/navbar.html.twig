@@ -1,0 +1,53 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('stylesheets/component-style.css') }}">
+{% endblock %}
+
+<!-- Navbar -->
+<header class="style-navbar sticky-top">
+    <!-- Navbar dark, sticky top, responsive -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo + nom -->
+            <a class="navbar-brand" id="nom-navbar" href="{{path('home')}}">
+                <img src="{{ asset('medias/images/logo-valerie-geist.svg') }}" width="30" height="30" class="d-inline-block align-top" alt="logo Valérie GEIST">
+                <span class="nom ml-2">Valérie GEIST</span>
+            </a>
+            <!-- Bouton ouverture menu déroulant -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menus navbar -->
+            <div class="collapse navbar-collapse" id="dropdown">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Dropdown projets -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {{'projets_web' in app.request.requestUri ? 'active'}}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                           Projets
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{path('projets_web')}}">Projets Développement Web</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.behance.net/valeriegeist" target="blank">Projets Graphisme</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="{{ asset('medias/cv-2020.pdf') }}" target="blank">Mon CV</a>
+                    </li>
+                </ul>
+
+                <!-- Liens réseaux sociaux -->
+                <a class="navbar-brand" href="https://www.behance.net/valeriegeist" target="blank" title="Mon Behance">
+                    <img src="{{ asset('medias/images/logo_behance.svg') }}" width="30" height="30" alt="logo behance">
+                </a>
+                <a class="navbar-brand" href="https://github.com/valerie-geist" title="Mon github" target="blank">
+                    <img src="{{ asset('medias/images/mark-github.svg') }}" width="30" height="30" alt="logo github">
+                </a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/val%C3%A9rie-geist-988434194/" target="blank" title="Mon LinkedIn">
+                    <img src="{{ asset('medias/images/logo_linkedin.svg') }}" width="30" height="30" alt="logo linkedin">
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>

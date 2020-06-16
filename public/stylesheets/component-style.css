@@ -1,0 +1,35 @@
+    /* NAVBAR */
+
+/* Style navbar (typo + épaisseur) */
+.style-navbar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+/* Style 'Valérie GEIST' navbar (taille + couleur) */
+#nom-navbar {
+    color: #A4CC75;
+    font-size: 1.3em;
+}
+
+
+    /* FOOTER */
+
+/* Style footer (taille, alignement, couleurs) */
+.footer {
+    font-size: 10px;
+    text-align: center;
+    background-color: #424242;
+    color: rgb(160, 160, 160);
+}
+
+/* Couleur liens */
+a {
+    color: white;
+}
+
+/* Couleur liens hover */
+a:hover {
+    text-decoration: none;
+    color: #a4cc75;
+}

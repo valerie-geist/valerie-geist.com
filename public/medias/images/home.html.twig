@@ -1,0 +1,235 @@
+{% extends './base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+
+    /* Indentation texte présentation */
+    .indent {
+        text-indent: 5%;
+    }
+
+    /* Style h3 */
+    h3 {
+        font-weight: bold;
+    }
+
+   /* Couleur h3 et h4 */
+    h3, h4 {
+        color: #a4cc75;
+    }
+
+   /* Position h3, h4 et h5  */    
+    h3, h4, h5 {
+        text-align: center;
+    }
+
+   /* Liste taille, margin */
+    li {
+        list-style: none;
+        margin-left: -20px;
+        font-size: 18px;
+    }
+
+   /* Logo taille et position */
+    .logo {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+   /* Style images lien projets */
+    .projet img {
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    }
+    
+    /* Hover style images lien projets */
+    .projet img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.664);
+    }
+
+   /* Affichage tablettes */
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+        
+        /* Taille Logo */
+        .logo {
+            width: 100%;
+        }
+
+        /* Taille h5 */
+        h5 {
+            font-size: 13px;
+        }
+
+        /* Espace entre les carrés noirs */
+        .m-right{
+            margin-right: 10px;
+        }
+
+        /* Style et alignement li */
+        li{
+            font-size: 14px;
+            white-space: nowrap;
+            margin-right: 35px;
+        }
+
+        /* Position li compétences graphisme */
+        .m-left li{
+            margin-left: 50px;
+        }
+
+    }
+
+    @media screen and (min-width: 980px) {
+       /* Taille Logo */
+        .logo {
+            width: 100%;
+        }
+
+        /* Espace entre les carrés noirs */
+        .m-right{
+            margin-right: 30px;
+        }
+
+        /* Margin ul */
+        ul{
+            margin-left: 20px;
+        }
+
+        /* Margin li */
+        li{
+            margin-left: 10px;
+        }
+
+        /* Position li compétences graphisme */
+        .m-left li{
+            margin-left: 25%;
+        }
+    }
+
+</style>
+{% endblock %}
+
+{% block body %}
+
+<!-- Titre de la page -->
+<div class="container carre-vert mt-4 p-1">
+    <div>Développeuse Web</div>
+    <div>et Web mobile en formation</div>
+</div>
+
+<!-- Présentation -->
+<div class="container carre-noir mt-4 p-4">
+    <div class="row align-items-center justify-content-around">
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            <h3>Qui suis-je ?</h3>
+            <div class="mt-4 indent">
+                Je m’appelle Valérie GEIST, j’ai 26 ans et suis actuellement en formation pour acquérir mon titre
+                professionnel de Dévelopeuse Web et Web Mobile.
+            </div>
+            <div class="mt-2">
+                Je ne suis qu’à la moitié de ma formation, mais j’ai déjà appris les bases du dévoloppement web avec
+                les
+                langages de base du front-end et je suis en train de débuter l’apprentissage du back-end.
+            </div>
+            <div class="mt-2 indent">
+                Grâce à ma licence en Arts Appliqués - Design option Communication, j’ai appris les bases des
+                différents
+                logiciels de création graphique tels que Photoshop, Illustrator et InDesign et développé une
+                sensibilité
+                esthétique.
+            </div>
+            <div class="mt-2">
+                Je compte donc utiliser toutes ces compétences lors de la création de mes futurs projets en
+                développement web afin de créer des sites esthétiques mais aussi fonctionnels.
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 mt-4 logo">
+            <img src="{{ asset('medias/images/logo-valerie-geist.svg') }}" class="logo">
+        </div>
+    </div>
+</div>
+
+<!-- Titre compétences -->
+<div class="container carre-vert mt-4 p-1">
+    <h2 class="pt-1">Mes compétences</h2>
+</div>
+
+<!-- Compétences web et graphisme -->
+<div class="container mt-2 p-4">
+    <div class="row align-items-center justify-content-around">
+        <!-- Compétences web -->
+        <div class="col-sm col-md col-lg carre-noir m-right p-3">
+            <h4>Web</h4>
+            <ul>
+                <div class="row">
+                    <li class="col-sm-4 col-lg-4 mb-1"><img src="{{ asset('medias/images/logo-html.svg') }}"
+                            width="20px" class="mr-3">HTML</a>
+                    </li>
+                    <li class="col-sm-6 col-lg-6 mb-1"><img src="{{ asset('medias/images/logo-js.svg') }}"
+                            width="20px" class="mr-3">JavaScript / JQuery
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="col-sm-4 col-lg-4 mb-1"><img src="{{ asset('medias/images/logo-css.svg') }}"
+                            width="20px" class="mr-3">CSS
+                    </li>
+                    <li class="col-sm-6 col-lg-6 mb-1"><img src="{{ asset('medias/images/logo-php.svg') }}"
+                            width="20px" class="mr-3">Php / Symfony
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="col-sm-4 col-lg-4 mb-1"><img src="{{ asset('medias/images/logo-bootstrap.svg') }}"
+                            width="20px" class="mr-3">Bootstrap
+                    </li>
+                    <li class="col-sm-6 col-lg-6"><img src="{{ asset('medias/images/logo-sql.svg') }}"
+                            width="20px" class="mr-3">MySql
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- Compétences graphisme -->
+        <div class="col-sm col-md col-lg carre-noir m-left p-3">
+            <h4>Création graphique</h4>
+            <ul>
+                <li class="mb-1"><img src="{{ asset('medias/images/logo-photoshop.svg') }}" width="20px"
+                        class="mr-3">Photoshop</li>
+                <li class="mb-1"><img src="{{ asset('medias/images/logo-illustrator.svg') }}" width="20px"
+                        class="mr-3">Illustrator
+                </li>
+                <li><img src="{{ asset('medias/images/logo-indesign.svg') }}" width="20px" class="mr-3">InDesign</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Titre projets -->
+<div class="container carre-vert p-1">
+    <h2 class="pt-1">Mes projets</h2>
+</div>
+
+<div class="container mt-2 p-4">
+    <div class="row align-items-center justify-content-around">
+        <!-- Image et lien projets web -->
+        <div class="col-sm col-md col-lg p-4 carre-noir m-right projet">
+            <h5 class="mb-3">Voir mes projets de développement web :</h5>
+            <a href="{{path('projetsWeb')}}" class="projet"><img src="{{ asset('medias/images/image_code.jpg') }}"
+                    width="100%"></a>
+        </div>
+        <!-- Image et lien projets graphisme -->
+        <div class="col-sm col-md col-lg p-4 carre-noir projet">
+            <h5 class="mb-3">Voir mes projets de création graphique :</h5>
+            <a href="https://www.behance.net/valeriegeist" target="blank" class="projet"><img
+                    src="{{ asset('medias/images/mockup_cordissimo.jpg') }}" width="100%"></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{# {% block javascripts %}
+
+{% endblock %} #}

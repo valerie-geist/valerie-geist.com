@@ -1,0 +1,152 @@
+/* Style titre 'Qui-suis-je' (épaisseur, taille, couleur et alignement) */
+.presentation {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* Trait sous 'Qui-suis-je' (bordure, alignement et largeur) */
+.separation {
+    border-top: 1px solid white;
+    margin: auto;
+    width: 25%;
+}
+
+/* Indentation texte présentation */
+.indent {
+    text-indent: 5%;
+}
+
+/* Logo (taille, position et marge b) */
+.logo {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 1.5em;
+}
+
+/* Style ul (marge gauche) */
+ul{
+    margin-left: 1em;
+
+}
+
+/* Style li (taille, marge gauche et style) */
+li {
+    list-style: none;
+    margin-left: -1em;
+    font-size: 1.1em;
+    white-space: nowrap;
+}
+
+/* Affichage li JS md (aucun) */
+.affichage-li-md{
+    display: none;
+}
+
+/* Style images lien projets (bords arrondis) */
+.projet img {
+    border-radius: 10px;
+}
+
+/* Style hover images lien projets (opacité, ombre) */
+.projet img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.664);
+}
+
+
+    /* RESPONSIVE */
+
+/* Tablette */
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+    /* Trait sous 'Qui-suis-je' (largeur) */
+    .separation {
+        width: 15%;
+    }
+
+    /* Taille Logo */
+    .logo {
+        height: 100%;
+    }
+
+    /* Espace entre les cases noires (compétences et projets) */
+    .espace {
+        margin-right: 0.8em;
+    }
+    
+    /* Style ul (marge gauche) */
+    ul{
+        margin-left: -1em;
+    }
+
+    /* Style li (taille et marge droite) */
+    li {
+        font-size: 1em;
+        margin-right: 2.6em;
+    }
+
+    /* Affichage li JS sm et lg (aucun) */
+    .affichage-li-sm-lg{
+        display: none;
+    }
+
+    /* Affichage li JS md (oui) */
+    .affichage-li-md{
+        display: flex;
+    }
+
+    /* Style li compétences infographie (marge gauche) */
+    .m-left li {
+        margin-left: 3.4em;
+    }
+
+
+
+
+
+}
+
+/* Laptop */
+@media screen and (min-width: 980px) {
+
+   /* Trait sous 'Qui-suis-je' (largeur) */
+    .separation {
+        width: 10%;
+    }
+
+    /* Taille Logo */
+    .logo {
+        height: 100%;
+    }
+    
+    /* Espace entre les cases noires (compétences et projets) */
+    .espace {
+        margin-right: 2em;
+    }
+
+    /* Style ul (marge gauche) */
+    ul{
+        margin-left: -1em;
+    }
+
+    /* Style li (marge gauche) */
+    li {
+        margin-left: 0.8em;
+    }
+
+    /* Affichage li JS md (aucun) */
+    .affichage-li-md{
+        display: none;
+    }
+
+    /* Style li compétences infographie (marge gauche) */
+        .m-left li {
+        margin-left: 6.2em;
+    }
+
+    
+
+
+}
