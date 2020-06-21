@@ -13,6 +13,7 @@ h3 {
 
 h2{
     color: #a4cc75;
+    text-align: center;
 }
 
 
@@ -24,7 +25,8 @@ h2{
 }
 
 /* Style bouton page projet (alignement, couleurs et taille) */
-.bouton-projet {
+.bouton-projet
+ {
     background-color: #a4cc75;
     color: #424242;
 }
