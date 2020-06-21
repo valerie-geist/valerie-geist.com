@@ -1,0 +1,61 @@
+/* Paddinc case noire */
+.padding{
+    padding-right: 1em;
+}
+
+/* TITRES */
+
+/* Style h3 page projet (alignement et taille) */
+h3 {
+    text-align: left;
+    font-size: 1.3em;
+}
+
+h2{
+    color: #a4cc75;
+}
+
+
+    /* BOUTON */
+
+/* Style case bouton page projet (alignement) */
+.lien-projet{
+    text-align: center;
+}
+
+/* Style bouton page projet (alignement, couleurs et taille) */
+.bouton-projet {
+    background-color: #a4cc75;
+    color: #424242;
+}
+
+/* Style hover bouton page projet (couleurs) */
+.bouton-projet:hover {
+    background-color: white;
+    color: #789755;
+}
+
+
+    /* IMAGES */
+
+/* Style image (bords arrondis et marges) */
+.image-projet img{
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+    /* RESPONSIVE */
+
+
+/* Laptop */
+@media screen and (min-width: 980px) {
+
+    /* Paddinc case noire */
+    .padding{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+}

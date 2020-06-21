@@ -1,0 +1,193 @@
+/* Fond noir de la page */
+.fond-noir{
+    background-color: #1c1c1c;
+}
+
+
+
+        /* HEADER */
+
+/* Image de fond + ombre + padding-top du header */
+header{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* Couleur du span logo */
+span{
+    color: #d29310;
+}
+
+/* Bordure gauche header */
+#border {
+    border-image: linear-gradient(to top, #ea9f05,  #ea9e0500);
+    border-image-slice: 1;
+    border-left: 3px solid #ea9f05;
+}
+
+/* Style compte / panier */
+.mon_compte{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Padding des tableaux */
+td{
+    padding: 5px;
+}
+
+/* Taille bonjour */
+.bonjour{
+    font-size: 25px;
+}
+
+/* Bordure tableau menu */
+.border-menu{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Position logo */
+.logo{
+    position: absolute;
+    top: 30px;
+}
+
+
+
+        /* ARTICLES */
+
+/* Fond blanc de la page */
+.fond-blanc{
+    background-color: #f3f3f3;
+}
+
+/* Ombre image boxers */
+img[alt="Deux boxers"]{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* Cadre produit individuel */
+.cadre-produit{
+    box-shadow: 1px 0px 5px black;
+    margin: 4% 0%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+/* Cadre réduction de prix */
+.reduction{
+    background-color: #3c3c3c;
+    color: #ea9f05;
+    position: relative;
+    left: 320px;
+    bottom: 365px;
+    border: 3px inset grey;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 27%;
+    padding: 1%;
+}
+
+/* Font weight nom du produit */
+.nom-produit{
+    font-weight: bold;
+}
+
+/* bouton lien vers la page du produit */
+a[title="Voir la vente"]{
+    background-image: linear-gradient(to top, #2a2a2a, #3d3d3d);
+    color: white;
+    padding: 3% 18%;
+    width: 100px;
+    text-align: center;
+}
+
+/* Style prix barré */
+.prix-barre{
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 30px;
+    color: #212529;
+}
+
+/* Style nouveau prix */
+.prix{
+    font-size: 40px;
+    color: #ea9f05;
+    font-weight: bold;
+}
+
+/* .border-prix{
+    border-image: linear-gradient(to right, #21252900, #212529);
+    border-image-slice: 1;
+    border-bottom: 1px solid #212529;
+} */
+
+
+
+        /* FOOTER */
+
+/* Couleur fond footer */
+.fond-footer{
+    background-color: #373737;
+}
+
+/* Fond gris footer */
+.fond-gris{
+    background-color: #373737;
+    height: 25px;
+    /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.75); */
+    position: relative;
+    z-index: 2;
+}
+
+/* Menu footer */
+.menu-footer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    bottom: 30px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.75);
+    font-size: 10px;
+}
+
+/* padding td menu footer */
+.menu-footer td{
+    padding: 20px;
+}
+
+/* Barre de séparation blanche */
+.barre-blanche{
+    background-color: white;
+    height: 25px;
+}
+
+/* Style bloc information */
+.informations{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Position bloc information */
+.position-information{
+    margin: auto;
+}
+
+/* barre de séparation footer */
+.separation{
+    background-color: black;
+    margin: auto;
+    width: 30%;
+    height: 1px;
+}
+
+.copyright{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}

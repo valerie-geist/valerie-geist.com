@@ -6,10 +6,10 @@ home:
 # Path projets web
 projets_web:
   path: /projets-developpement-Web
-  controller: App\Controller\ProjetController::projetsWebAction
+  controller: App\Controller\ProjetController::index
 
 # Path projet sport
-projet_port:
+projet_sport:
   path: /projets-developpement-web/projet-sport
   controller: App\Controller\ProjetController::projetSportAction
 

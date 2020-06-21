@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sport.com - Evaluation Valérie GEIST 05/10/19</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ asset('stylesheets/projets/style-projet-sport.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald|Roboto&display=swap" rel="stylesheet">
+    <style>
+        header{
+            background-image: url('{{ asset("projets/images-projet-sport/header.png") }}');
+        }
+
+        .menu-footer{
+            background-image: url('{{ asset("projets/images-projet-sport/header.png") }}');
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="fond-noir">
+    <!-- Header (Logo, compte, panier, contact) -->
+    <header class="container-fluid">
+        <div class="container pt-4" id="border">
+            <div class="row">
+                <!-- Logo + texte sous logo -->
+                <div class="col-sm col-md col-lg logo">
+                    <img src="{{ asset('projets/images-projet-sport/logo.png') }}" alt="Logo Sport.com">
+                    <p>Lorem ipsum dolor <span>sit amet</span></p>
+                </div>
+                <!-- Mon compte + mon panier -->
+                <table class="col-sm col-md col-lg">
+                    <tr class="mon_compte">
+                        <!-- Mon Compte -->
+                        <td class="pl-5"><a href="..." title="mon compte"><img src="{{ asset('projets/images-projet-sport/icon-mon-compte.png') }}"
+                                    alt="Logo Mon Compte"></a></td>
+                        <td>Mon compte</td>
+                        <!-- Panier -->
+                        <td class="pl-5"><a href="..." title="mon panier"><img src="{{ asset('projets/images-projet-sport/icon-mon-panier.png') }}"
+                                    alt="Logo Mon Panier"></a></td>
+                        <td>Votre panier est vide</td>
+                    </tr>
+                    <!-- Phrase d'accueil -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <!-- Bonjour -->
+                        <td class="bonjour pl-5">Bonjour Julien</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Contact - parrainage - déconnexion -->
+            <div class="row align-items-end mt-2">
+                <div class="col-sm col-md col-lg"></div>
+                <table class="menu col-sm-6 col-md-6 col-lg-6">
+                    <tr>
+                        <td class="border-menu">Contactez-nous</td>
+                        <td class="border-menu">Parrainage</td>
+                        <td class="border-menu">Deconnexion</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Image boxers header -->
+    <div class="container mt-3">
+        <div class="row">
+            <img src="{{ asset('projets/images-projet-sport/header-page-catalogue.png') }}" alt="Deux boxers" width="100%">
+        </div>
+    </div>
+
+    <div class="container fond-blanc pb-5">
+        <!-- Section d'achat -->
+        <section>
+            <div class="container">
+                <!-- Première ligne avec deux articles -->
+                <div class="row">
+                    <!-- Produit-->
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-sm col-md col-lg cadre-produit">
+                        <!-- Image gants de boxes -->
+                        <img src="{{ asset('projets/images-projet-sport/gant-boxe-2.png') }}" alt="Gants de boxe noirs">
+                        <!-- Rectangle réductions -->
+                        <p class="reduction">- 45%</p>
+                        <!-- Nom du produit -->
+                        <div class="nom-produit">NTS DE BOXE COMBAT KLIMAX V3</div>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <!-- Produit-->
+                    <div class="col-sm col-md col-lg cadre-produit">
+                        <!-- Image gants de boxes -->
+                        <img src="{{ asset('projets/images-projet-sport/gant-boxe-1.png') }}" alt="Gants de boxe rouges">
+                        <!-- Rectangle réductions -->
+                        <div class="reduction">- 60%</div>
+                        <div class="nom-produit">NTS DE BOXE COMBAT KLIMAX V3</div>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <!-- Carré lien "voir la vente" -->
+                    <div class="col-sm col-md col-lg">
+                        <a href="..." title="Voir la vente">Voir la vente</a>
+                    </div>
+                    <!-- Prix + réduction -->
+                    <div class="col-sm col-md col-lg">
+                        <span class="prix-barre">120€</span>
+                        <span class="prix ml-3">65€</span>
+                    </div>
+                    <!-- Carré lien "voir la vente" -->
+                    <div class="col-sm col-md col-lg">
+                        <a href="..." title="Voir la vente">Voir la vente</a>
+                    </div>
+                    <!-- Prix + réduction -->
+                    <div class="col-sm col-md col-lg border-prix">
+                        <span class="prix-barre">120€</span>
+                        <span class="prix ml-3">65€</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <!-- Deuxième ligne avec deux articles -->
+                <div class="row">
+                    <!-- Produit-->
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-sm col-md col-lg cadre-produit">
+                        <!-- Image gants de boxes -->
+                        <img src="{{ asset('projets/images-projet-sport/gant-boxe-2.png') }}" alt="Gants de boxe noirs">
+                        <!-- Rectangle réductions -->
+                        <div class="reduction">- 30%</div>
+                        <!-- Nom du produit -->
+                        <div class="nom-produit">NTS DE BOXE COMBAT KLIMAX V3</div>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <!-- Produit-->
+                    <div class="col-sm col-md col-lg cadre-produit">
+                        <!-- Image gants de boxes -->
+                        <img src="{{ asset('projets/images-projet-sport/gant-boxe-1.png') }}" alt="Gants de boxe rouges">
+                        <!-- Rectangle réductions -->
+                        <div class="reduction">- 70%</div>
+                        <div class="nom-produit">NTS DE BOXE COMBAT KLIMAX V3</div>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <!-- Carré lien "voir la vente" -->
+                    <div class="col-sm col-md col-lg">
+                        <a href="..." title="Voir la vente">Voir la vente</a>
+                    </div>
+                    <!-- Prix + réduction -->
+                    <div class="col-sm col-md col-lg border-prix">
+                        <span class="prix-barre">120€</span>
+                        <span class="prix ml-3">65€</span>
+                    </div>
+                    <!-- Carré lien "voir la vente" -->
+                    <div class="col-sm col-md col-lg">
+                        <a href="..." title="Voir la vente">Voir la vente</a>
+                    </div>
+                    <!-- Prix + réduction -->
+                    <div class="col-sm col-md col-lg">
+                        <span class="prix-barre">120€</span>
+                        <span class="prix ml-3">65€</span>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid fond-gris"></div>
+    <div class="container barre-blanche"></div>
+
+    </div>
+
+    <!-- Footer - Navigation, "règles" de conduite du site (livraison, sécurité paiement,...) + réseaux sociaux -->
+    <footer class="container-fluid fond-footer">
+        <!-- Navigation (Qui sommes-nous, contact, assistance et CGV) -->
+        <div></div>
+        <table class="menu-footer">
+            <tr>
+                <td>Qui sommes-nous</td>
+                <td><img src="{{ asset('projets/images-projet-sport/rond.svg') }}" height="20px"></td>
+                <td>Contact</td>
+                <td><img src="{{ asset('projets/images-projet-sport/rond.svg') }}" height="20px"></td>
+                <td>Assistance</td>
+                <td><img src="{{ asset('projets/images-projet-sport/rond.svg') }}" height="20px"></td>
+                <td>CGV</td>
+            </tr>
+        </table>
+
+        <!-- "Règle" de conduite -->
+        <div class="container informations">
+            <div class="row  ml-5 mr-5 position-information">
+                <div class="col-sm col-md col-lg">
+                    <img src="{{ asset('projets/images-projet-sport/icon-livre.png') }}" alt="Icone livre">
+                </div>
+                <div class="col-sm col-md col-lg">
+                    <img src="{{ asset('projets/images-projet-sport/icon-camion.png') }}" alt="Icone camion">
+                </div>
+                <div class="col-sm col-md col-lg">
+                    <img src="{{ asset('projets/images-projet-sport/icon-cadenat.png') }}" alt="Icone cadenas">
+                </div>
+                <div class="col-sm col-md col-lg">
+                    <img src="{{ asset('projets/images-projet-sport/icon-pouce.png') }}" alt="Icone pouce en l'air">
+                </div>
+            </div>
+            <div class="row mt-2 ml-5 mr-5 position-information">
+                <div class="col-sm col-md col-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque audantium,
+                    totam rem aperiam
+                </div>
+                <div class="col-sm col-md col-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque audantium,
+                    totam rem aperiam
+                </div>
+                <div class="col-sm col-md col-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque audantium,
+                    totam rem aperiam
+                </div>
+                <div class="col-sm col-md col-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque audantium,
+                    totam rem aperiam
+                </div>
+            </div>
+        </div>
+
+        <div class="separation mt-5"></div>
+
+        <!-- Liens réseaux sociaux (Facebook, Twitter, LinkedIn) -->
+        <div class="container mt-4">
+            <div class="row position-information">
+                <p class="col-sm col-md col-lg"></p>
+                <p class="col-sm-1 col-md-1 col-lg-1"><img src="{{ asset('projets/images-projet-sport/icon-facebook.png') }}" alt="Logo Facebook"></p>
+                <p class="col-sm-1 col-md-1 col-lg-1"><img src="{{ asset('projets/images-projet-sport/icon-twitter.png') }}" alt="Logo Twitter"></p>
+                <p class="col-sm-1 col-md-1 col-lg-1"><img src="{{ asset('projets/images-projet-sport/icon-linkedin.png') }}" alt="Logo LinkedIn"></p>
+                <p class="col-sm col-md col-lg"></p>
+            </div>
+        </div>
+
+        <!-- Note copyright -->
+        <div class="container copyright mt-4 pb-3">© 2013 sport privilege. Tous droits réservés.</div>
+    </footer>
+
+</body>
+
+</html>
