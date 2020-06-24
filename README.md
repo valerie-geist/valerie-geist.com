@@ -1,4 +1,3 @@
-﻿# valerie-geist.com
+﻿# valerie-geist.com (Symfony)
 
-Code de mon site personnel développé sous Symfony.
-/!\ Site en maintenance donc non disponible pour le moment. /!\
+Version de mon site personnel développé sous Symfony. (Le site publié sur valerie-geist.com n'est pas sous Symfony pour des soucis de rapidité)
